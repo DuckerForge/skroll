@@ -1,104 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Skroll — Short clips on Solana Seeker</title>
+    <title>Skroll | Video brevi su Solana Seeker</title>
     <meta
       name="description"
-      content="Skroll is a ≤30s short-video app for Solana Seeker. Tip creators in SKR, trim, add music, publish."
+      content="Skroll è l’app di clip verticali per Solana Seeker. Registra entro 30 secondi, taglia col dito, aggiungi musica e pubblica. I creator ricevono tip in SKR."
     />
     <meta property="og:title" content="Skroll" />
     <meta
       property="og:description"
-      content="Short clips. Real SKR tips. Built for Solana Seeker."
+      content="Clip verticali su Solana Seeker. Tip in SKR, editor rapido, feed leggero."
     />
     <meta property="og:type" content="website" />
     <link rel="icon" href="./icon.png" type="image/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Syne:wght@700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class="grain" aria-hidden="true"></div>
+    <div class="aurora" aria-hidden="true"></div>
+    <div class="grid-fade" aria-hidden="true"></div>
 
     <header class="top">
       <a class="brand" href="./">
-        <img src="./icon.png" alt="" width="36" height="36" />
+        <img src="./icon.png" alt="" width="34" height="34" />
         <span>Skroll</span>
       </a>
       <nav>
-        <a href="#how">How it works</a>
-        <a href="./admin.html">Admin</a>
-        <a class="nav-cta" href="#get">Get the app</a>
+        <a href="#product">Prodotto</a>
+        <a href="#flow">Come funziona</a>
+        <a class="nav-cta" href="#get">Scarica</a>
       </nav>
     </header>
 
     <main>
       <section class="hero">
         <div class="hero-copy">
-          <p class="brand-mark" aria-hidden="true">Skroll</p>
-          <h1>Short clips.<br />Real SKR tips.</h1>
+          <p class="brand-lockup">Skroll</p>
+          <h1>Clip verticali.<br />Tip in SKR.</h1>
           <p class="lede">
-            Vertical video for Solana Seeker — record, trim with your finger, drop a beat,
-            publish. Tip creators in SKR.
+            L’app video per Solana Seeker. Registra entro 30 secondi, taglia col dito,
+            aggiungi una traccia e pubblica sul feed. I creator guadagnano tip in SKR
+            direttamente dal wallet.
           </p>
           <div class="cta-row">
-            <a class="btn primary" href="#get">Open on Seeker</a>
-            <a class="btn ghost" href="#how">See the flow</a>
+            <a class="btn primary" href="#get">Apri su Seeker</a>
+            <a class="btn ghost" href="#product">Guarda l’app</a>
           </div>
         </div>
-        <div class="hero-stage" aria-hidden="true">
-          <div class="phone">
-            <div class="phone-screen">
-              <div class="scan"></div>
-              <div class="phone-ui">
-                <span class="pill">LIVE</span>
-                <strong>@skroll</strong>
-                <em>≤30s · tip in SKR</em>
-              </div>
-            </div>
-          </div>
+
+        <div class="hero-phones" aria-label="Anteprima Skroll">
+          <figure class="phone phone-side phone-left reveal">
+            <img src="./screens/create.jpg" alt="Schermata crea clip su Skroll" />
+          </figure>
+          <figure class="phone phone-main reveal">
+            <img src="./screens/feed.jpg" alt="Feed verticale Skroll" />
+            <div class="phone-glow" aria-hidden="true"></div>
+          </figure>
+          <figure class="phone phone-side phone-right reveal">
+            <img src="./screens/wallet.jpg" alt="Wallet e guadagni SKR su Skroll" />
+          </figure>
         </div>
       </section>
 
-      <section id="how" class="section">
-        <h2>One job per screen</h2>
-        <p class="section-lede">Create fast. Tip clean. Stay on Seeker.</p>
+      <section id="product" class="section product">
+        <h2>Fatta per Seeker</h2>
+        <p class="section-lede">
+          Feed immersivo, camera editor e tip on chain. Un’esperienza pensata per lo
+          schermo del Solana Seeker, non per un browser generico.
+        </p>
+
+        <div class="showcase">
+          <article class="shot reveal">
+            <div class="shot-frame">
+              <img src="./screens/feed.jpg" alt="Feed Skroll" />
+            </div>
+            <h3>Feed verticale</h3>
+            <p>Clip a schermo intero, tip rapidi e report in un tap.</p>
+          </article>
+          <article class="shot reveal">
+            <div class="shot-frame">
+              <img src="./screens/create.jpg" alt="Editor Skroll" />
+            </div>
+            <h3>Editor camera</h3>
+            <p>Registra, taglia trascinando e mixa la musica prima del publish.</p>
+          </article>
+          <article class="shot reveal">
+            <div class="shot-frame">
+              <img src="./screens/wallet.jpg" alt="Wallet Skroll" />
+            </div>
+            <h3>Wallet SKR</h3>
+            <p>Saldo, guadagni e tip collegati al Seeker Wallet.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="flow" class="section flow">
+        <h2>Dal take al tip</h2>
+        <p class="section-lede">Tre passaggi. Zero fronzoli.</p>
         <ol class="steps">
-          <li>
+          <li class="reveal">
             <span>01</span>
-            <h3>Shoot or upload</h3>
-            <p>In-app camera or system camera. Clips stay under 30 seconds.</p>
+            <h3>Crea</h3>
+            <p>Camera in app o upload dalla gallery. Massimo 30 secondi.</p>
           </li>
-          <li>
+          <li class="reveal">
             <span>02</span>
-            <h3>Trim + music</h3>
-            <p>Drag the cut handles. Overlay free loops before you publish.</p>
+            <h3>Taglia</h3>
+            <p>Maniglie a trascinamento e loop musicali pronti al mux.</p>
           </li>
-          <li>
+          <li class="reveal">
             <span>03</span>
-            <h3>Tip in SKR</h3>
-            <p>Wallet-native tips on Solana. Creators earn; the feed stays light.</p>
+            <h3>Pubblica</h3>
+            <p>Sul feed Seeker. Chi guarda può inviarti tip in SKR.</p>
           </li>
         </ol>
       </section>
 
       <section id="get" class="section get">
-        <h2>Get Skroll</h2>
-        <p class="section-lede">
-          Built for the Solana Seeker dApp Store. Package
-          <code>com.skroll.seeker</code>.
-        </p>
-        <div class="get-card">
-          <img src="./icon.png" alt="Skroll icon" width="72" height="72" />
+        <div class="get-panel reveal">
+          <img src="./icon.png" alt="Icona Skroll" width="64" height="64" />
           <div>
-            <strong>Skroll for Seeker</strong>
-            <p>Install from the Solana Mobile dApp Store on your Seeker device.</p>
+            <h2>Scarica Skroll</h2>
+            <p>
+              Disponibile per Solana Seeker. Package
+              <code>com.skroll.seeker</code>.
+            </p>
           </div>
           <a
             class="btn primary"
@@ -112,7 +145,7 @@
     </main>
 
     <footer>
-      <span>Skroll · Solana Seeker</span>
+      <span>Skroll su Solana Seeker</span>
       <a href="./admin.html">Admin</a>
     </footer>
 
