@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy | Skroll</title>
+    <meta name="description" content="Skroll privacy policy for the Solana Seeker short video app." />
+    <link rel="icon" href="./icon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./legal.css" />
+  </head>
+  <body>
+    <div class="bg-stage" aria-hidden="true"><img src="./bg.jpg" alt="" /></div>
+    <div class="aurora" aria-hidden="true"></div>
+    <div class="grid-fade" aria-hidden="true"></div>
+
+    <header class="top">
+      <a class="brand" href="./">
+        <img src="./logo.png" alt="" width="36" height="36" />
+        <span>Skroll</span>
+      </a>
+      <nav>
+        <a href="./terms.html">Terms</a>
+        <a href="./skr.html">SKR fees</a>
+        <a class="nav-cta" href="./">Home</a>
+      </nav>
+    </header>
+
+    <main class="legal">
+      <h1>Privacy Policy</h1>
+      <p class="meta">Effective July 22, 2026 · Package <code>com.skroll.seeker</code></p>
+
+      <p>
+        Skroll (“Skroll”, “we”, “us”) is a short video application for Solana Seeker.
+        This policy explains what information the app processes and how it is used.
+      </p>
+
+      <h2>1. Controllers</h2>
+      <p>
+        Skroll processes limited technical and on chain data needed to run the service.
+        Wallet keys stay in your Seeker Seed Vault or connected wallet. Skroll does not
+        receive or store seed phrases or private keys.
+      </p>
+
+      <h2>2. Data we process</h2>
+      <ul>
+        <li><strong>Wallet public key</strong> when you connect Seeker Wallet to tip, publish, report, or manage clips.</li>
+        <li><strong>Video and captions</strong> you upload, stored on Cloudflare R2 via the Skroll upload worker.</li>
+        <li><strong>Device media permissions</strong> camera, microphone, and gallery, used only for recording or importing clips.</li>
+        <li><strong>Reports</strong> reason codes and reporter wallet for moderation.</li>
+        <li><strong>On chain tip data</strong> amounts, memo tags, and related Solana transaction metadata visible on the public ledger.</li>
+        <li><strong>Local preferences</strong> such as language and locally hidden reported clips on your device.</li>
+      </ul>
+
+      <h2>3. What we do not collect</h2>
+      <ul>
+        <li>No seed phrases or private keys.</li>
+        <li>No government ID or KYC documents.</li>
+        <li>No advertising ID sales to third party ad networks.</li>
+        <li>No contacts list scraping.</li>
+      </ul>
+
+      <h2>4. Why we process data</h2>
+      <ul>
+        <li>Publish and stream clips on the Skroll feed.</li>
+        <li>Enable SKR tips, retention extensions, and featured boosts.</li>
+        <li>Moderate abuse via reports and auto hide rules.</li>
+        <li>Operate storage retention (default TTL and paid extensions).</li>
+        <li>Secure the service and prevent fraud or spam.</li>
+      </ul>
+
+      <h2>5. Storage and retention</h2>
+      <p>
+        Media objects live in Cloudflare R2 through the Skroll worker. Clips expire after the
+        configured retention window unless extended. Report records are kept to enforce
+        moderation. On chain transfers remain public forever on Solana.
+      </p>
+
+      <h2>6. Sharing</h2>
+      <p>
+        We use infrastructure providers (for example Cloudflare) to host media and the upload API.
+        Public feed URLs and Solana transactions are visible to anyone. We do not sell personal data.
+      </p>
+
+      <h2>7. Your choices</h2>
+      <ul>
+        <li>Disconnect your wallet in Settings.</li>
+        <li>Delete your own clips from Profile when available.</li>
+        <li>Revoke camera, microphone, or gallery access in Android settings.</li>
+        <li>Report abusive content from the feed.</li>
+      </ul>
+
+      <h2>8. Children</h2>
+      <p>
+        Skroll is not directed to children under 13 (or the minimum age required in your country).
+        Do not use the app if you are under that age.
+      </p>
+
+      <h2>9. Changes</h2>
+      <p>
+        We may update this policy as the product evolves. Continued use after an update means
+        you accept the revised policy. Material changes will be noted by updating the effective date.
+      </p>
+
+      <h2>10. Contact</h2>
+      <p>
+        For privacy requests related to Skroll, open an issue on the project repository
+        <a href="https://github.com/DuckerForge/skroll">github.com/DuckerForge/skroll</a>
+        or contact the publisher wallet listed in the Seeker Store listing.
+      </p>
+    </main>
+
+    <footer>
+      <div class="footer-links">
+        <a href="./privacy.html">Privacy</a>
+        <a href="./terms.html">Terms</a>
+        <a href="./skr.html">SKR fees</a>
+        <a href="./admin.html">Admin</a>
+      </div>
+      <span>Skroll on Solana Seeker</span>
+    </footer>
+  </body>
+</html>

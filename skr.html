@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SKR fees | Skroll</title>
+    <meta
+      name="description"
+      content="How Skroll tips work in SKR, protocol fee, treasury wallet, and burn policy."
+    />
+    <link rel="icon" href="./icon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./legal.css" />
+  </head>
+  <body>
+    <div class="bg-stage" aria-hidden="true"><img src="./bg.jpg" alt="" /></div>
+    <div class="aurora" aria-hidden="true"></div>
+    <div class="grid-fade" aria-hidden="true"></div>
+
+    <header class="top">
+      <a class="brand" href="./">
+        <img src="./logo.png" alt="" width="36" height="36" />
+        <span>Skroll</span>
+      </a>
+      <nav>
+        <a href="./privacy.html">Privacy</a>
+        <a href="./terms.html">Terms</a>
+        <a class="nav-cta" href="./">Home</a>
+      </nav>
+    </header>
+
+    <main class="legal">
+      <h1>SKR fees</h1>
+      <p class="meta">Tips, protocol fee, treasury, and burn notes · Updated July 22, 2026</p>
+
+      <div class="callout">
+        SKR is the Solana Mobile ecosystem token. Skroll is an independent app that uses SKR for tips
+        and optional paid features. Skroll does not issue SKR and does not control Solana Mobile staking.
+      </div>
+
+      <h2>1. Tips</h2>
+      <ul>
+        <li>Users tip creators in SKR from a connected Seeker Wallet.</li>
+        <li>Default tip base and multipliers are set in the app config and can change over time.</li>
+        <li>Every tip is an on chain SPL transfer (plus a small SOL network fee paid by the sender).</li>
+        <li>Confirmed tips cannot be reversed by Skroll.</li>
+      </ul>
+
+      <h2>2. Protocol fee</h2>
+      <p>
+        Skroll takes a <strong>10% protocol fee</strong> on each tip. The creator receives the remaining
+        <strong>90%</strong>.
+      </p>
+      <ul>
+        <li>Fee basis points: <code>1000</code> (10%).</li>
+        <li>Treasury wallet: <code>qXhoL96gkzqe2KFMpVPseEWVzyzVUibw7YcXknUJQ85</code></li>
+        <li>Paid features such as retention extend or featured boost, when enabled, may also route a protocol share.</li>
+      </ul>
+
+      <h2>3. SKR burn</h2>
+      <p>
+        Skroll does <strong>not</strong> automatically burn tip fees today. The 10% protocol share is sent
+        to the treasury wallet above for product operations, infrastructure, and future ecosystem programs.
+      </p>
+      <p>
+        If a burn path is enabled later (for example routing part of treasury inflows to a burn address),
+        this page will be updated with the burn mint address, percentage, and effective date before it goes live.
+      </p>
+
+      <h2>4. No burner wallets</h2>
+      <p>
+        Skroll is built for Seeker Wallet / Seed Vault via Mobile Wallet Adapter. The app does not create
+        disposable “burner” wallets, does not hold user keys, and cannot move funds without an explicit
+        wallet signature.
+      </p>
+
+      <h2>5. Risks</h2>
+      <ul>
+        <li>SKR price can move quickly.</li>
+        <li>Wrong destination approvals are irreversible.</li>
+        <li>Network congestion can delay or fail transactions.</li>
+        <li>Always verify mint <code>SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3</code> before trading elsewhere.</li>
+      </ul>
+
+      <h2>6. Related</h2>
+      <p>
+        See also <a href="./terms.html">Terms of Service</a> and
+        <a href="./privacy.html">Privacy Policy</a>.
+      </p>
+    </main>
+
+    <footer>
+      <div class="footer-links">
+        <a href="./privacy.html">Privacy</a>
+        <a href="./terms.html">Terms</a>
+        <a href="./skr.html">SKR fees</a>
+        <a href="./admin.html">Admin</a>
+      </div>
+      <span>Skroll on Solana Seeker</span>
+    </footer>
+  </body>
+</html>
