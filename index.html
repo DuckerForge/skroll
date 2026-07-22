@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Skroll — Short clips on Solana Seeker</title>
+    <meta
+      name="description"
+      content="Skroll is a ≤30s short-video app for Solana Seeker. Tip creators in SKR, trim, add music, publish."
+    />
+    <meta property="og:title" content="Skroll" />
+    <meta
+      property="og:description"
+      content="Short clips. Real SKR tips. Built for Solana Seeker."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="./icon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Syne:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="top">
+      <a class="brand" href="./">
+        <img src="./icon.png" alt="" width="36" height="36" />
+        <span>Skroll</span>
+      </a>
+      <nav>
+        <a href="#how">How it works</a>
+        <a href="./moderation.html">Reports</a>
+        <a class="nav-cta" href="#get">Get the app</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="brand-mark" aria-hidden="true">Skroll</p>
+          <h1>Short clips.<br />Real SKR tips.</h1>
+          <p class="lede">
+            Vertical video for Solana Seeker — record, trim with your finger, drop a beat,
+            publish. Tip creators in SKR.
+          </p>
+          <div class="cta-row">
+            <a class="btn primary" href="#get">Open on Seeker</a>
+            <a class="btn ghost" href="#how">See the flow</a>
+          </div>
+        </div>
+        <div class="hero-stage" aria-hidden="true">
+          <div class="phone">
+            <div class="phone-screen">
+              <div class="scan"></div>
+              <div class="phone-ui">
+                <span class="pill">LIVE</span>
+                <strong>@skroll</strong>
+                <em>≤30s · tip in SKR</em>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="how" class="section">
+        <h2>One job per screen</h2>
+        <p class="section-lede">Create fast. Tip clean. Stay on Seeker.</p>
+        <ol class="steps">
+          <li>
+            <span>01</span>
+            <h3>Shoot or upload</h3>
+            <p>In-app camera or system camera. Clips stay under 30 seconds.</p>
+          </li>
+          <li>
+            <span>02</span>
+            <h3>Trim + music</h3>
+            <p>Drag the cut handles. Overlay free loops before you publish.</p>
+          </li>
+          <li>
+            <span>03</span>
+            <h3>Tip in SKR</h3>
+            <p>Wallet-native tips on Solana. Creators earn; the feed stays light.</p>
+          </li>
+        </ol>
+      </section>
+
+      <section id="get" class="section get">
+        <h2>Get Skroll</h2>
+        <p class="section-lede">
+          Built for the Solana Seeker dApp Store. Package
+          <code>com.skroll.seeker</code>.
+        </p>
+        <div class="get-card">
+          <img src="./icon.png" alt="Skroll icon" width="72" height="72" />
+          <div>
+            <strong>Skroll for Seeker</strong>
+            <p>Install from the Solana Mobile dApp Store on your Seeker device.</p>
+          </div>
+          <a
+            class="btn primary"
+            href="https://solanamobile.com/"
+            target="_blank"
+            rel="noreferrer"
+            >Seeker Store</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>Skroll · Solana Seeker</span>
+      <a href="./moderation.html">Moderation</a>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

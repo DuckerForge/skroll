@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Skroll — Report status</title>
+    <meta name="description" content="Check Skroll clip report counts and hide status." />
+    <link rel="icon" href="./icon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Syne:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="top">
+      <a class="brand" href="./">
+        <img src="./icon.png" alt="" width="36" height="36" />
+        <span>Skroll</span>
+      </a>
+      <nav>
+        <a href="./">Home</a>
+        <a class="nav-cta" href="./moderation.html">Reports</a>
+      </nav>
+    </header>
+
+    <main class="mod">
+      <h1>Report status</h1>
+      <p class="lede">
+        Check how many unique wallets reported a clip. At
+        <strong>15 reports</strong> the video is hidden from the public feed.
+      </p>
+
+      <form class="form" id="status-form">
+        <label>
+          Creator wallet
+          <input
+            id="creatorWallet"
+            name="creatorWallet"
+            required
+            autocomplete="off"
+            spellcheck="false"
+            placeholder="Base58 wallet of the creator"
+          />
+        </label>
+        <label>
+          Video id
+          <input
+            id="videoId"
+            name="videoId"
+            required
+            autocomplete="off"
+            spellcheck="false"
+            placeholder="e.g. afa0e33a8da644d1"
+          />
+        </label>
+        <button class="btn primary" type="submit">Check status</button>
+      </form>
+
+      <p class="err" id="error" hidden></p>
+
+      <div class="result" id="result" aria-live="polite">
+        <dl>
+          <dt>Reports</dt>
+          <dd id="reportCount">—</dd>
+          <dt>Threshold</dt>
+          <dd id="threshold">15</dd>
+          <dt>Hidden</dt>
+          <dd id="hidden">—</dd>
+          <dt>Reason</dt>
+          <dd id="reason">—</dd>
+          <dt>Hidden at</dt>
+          <dd id="hiddenAt">—</dd>
+        </dl>
+        <div class="bar" aria-hidden="true"><i id="barFill"></i></div>
+      </div>
+    </main>
+
+    <footer>
+      <span>Skroll moderation</span>
+      <a href="./">Back home</a>
+    </footer>
+
+    <script src="./moderation.js"></script>
+  </body>
+</html>
