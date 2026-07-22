@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Skroll Admin</title>
+    <meta name="robots" content="noindex" />
+    <link rel="icon" href="./icon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Syne:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./admin.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="top">
+      <a class="brand" href="./">
+        <img src="./icon.png" alt="" width="36" height="36" />
+        <span>Skroll Admin</span>
+      </a>
+      <nav>
+        <a href="./">Site</a>
+        <button class="nav-cta" type="button" id="connectBtn">Connect wallet</button>
+      </nav>
+    </header>
+
+    <main class="admin">
+      <section class="admin-hero">
+        <h1>Moderation</h1>
+        <p class="lede">
+          Connect the allowlisted admin wallet to review reports, hide/restore clips, or delete.
+          Auto-hide kicks in at <strong>15</strong> unique reports.
+        </p>
+        <div class="session" id="session">
+          <span class="dot" id="sessionDot"></span>
+          <span id="sessionLabel">Not connected</span>
+        </div>
+      </section>
+
+      <section class="admin-toolbar" id="toolbar" hidden>
+        <button class="btn primary" type="button" id="refreshBtn">Refresh</button>
+        <span id="stats" class="muted"></span>
+      </section>
+
+      <p class="err" id="error" hidden></p>
+
+      <div class="gate" id="gate">
+        <p>Connect Seed Vault / Phantom / Solflare with an <strong>admin wallet</strong> to continue.</p>
+        <button class="btn primary" type="button" id="connectBtn2">Connect wallet</button>
+      </div>
+
+      <div class="admin-list" id="list" hidden></div>
+    </main>
+
+    <footer>
+      <span>Skroll admin · signed wallet session</span>
+      <a href="./">Back</a>
+    </footer>
+
+    <script src="./admin.js"></script>
+  </body>
+</html>
